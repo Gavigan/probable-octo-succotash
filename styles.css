@@ -400,7 +400,7 @@ h1 span {
 .market-card .actions { grid-column: 1/-1; }
 
 .image-story { min-height: min(880px,88svh); display: flex; justify-content: flex-end; }
-.story-image { background-image: url("assets/grand-room-kitchen-wood-ceiling.jpeg"); }
+.story-image { background-image: url("assets/grand-room-kitchen.jpeg"); }
 .story-panel {
   width: min(570px,43vw);
   padding: clamp(70px,9vw,140px) clamp(35px,5vw,82px);

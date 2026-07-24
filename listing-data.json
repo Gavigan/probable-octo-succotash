@@ -43,8 +43,8 @@
   "approvedAssets": {
     "heroExterior": "assets/front-rendering.jpeg",
     "secondaryExterior": "assets/side-rendering.jpeg",
-    "grandRoom": "assets/grand-room-kitchen-wood-ceiling.jpeg",
-    "familySittingRoom": "assets/family-sitting-room-olive.jpeg",
+    "grandRoom": "assets/grand-room-kitchen.jpeg",
+    "familySittingRoom": "assets/family-sitting-room.jpeg",
     "primaryBedroom": "assets/primary-bedroom.jpeg",
     "primaryBath": "assets/primary-bath.jpeg",
     "mainLevelPlan": "assets/main-level-plan.jpeg",
@@ -52,5 +52,13 @@
     "designCollection": "assets/design-collection.jpeg"
   },
   "buyerInquiryMessage": "Hello, I am interested in 2 Blake Lane at Bull Point and would like more information or a private presentation.",
-  "controllingDocumentsNotice": "The executed purchase agreement, approved plans, final specifications and signed change orders control."
+  "controllingDocumentsNotice": "The executed purchase agreement, approved plans, final specifications and signed change orders control.",
+  "assetPolicy": {
+    "status": "locked",
+    "instruction": "Use the approved blue-wall Grand Room and family sitting room renderings. Do not replace them without Billy's explicit approval.",
+    "excludedFromPublication": [
+      "assets/grand-room-kitchen-wood-ceiling.jpeg",
+      "assets/family-sitting-room-olive.jpeg"
+    ]
+  }
 }
