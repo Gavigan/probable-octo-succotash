@@ -96,7 +96,7 @@ planModal.addEventListener("click", (event) => {
 const conciergeTopics = [
   {
     keywords: ["overview", "home", "house", "bedroom", "bath", "square", "size", "layout", "plan"],
-    answer: "The Hancock is currently presented with four bedrooms, 4.5 baths, approximately 3,414 heated square feet and approximately 4,995 square feet under roof. The primarily one-level layout includes a private primary wing, generous guest rooms and a conditioned upper suite with a full bath. Current plans and purchase documents control final dimensions."
+    answer: "The Hancock is currently presented with four bedrooms, 3.5 baths, approximately 3,414 heated square feet and approximately 4,995 square feet under roof. The primarily one-level layout includes a private primary wing, generous guest rooms and a conditioned upper suite with a full bath. Current plans and purchase documents control final dimensions."
   },
   {
     keywords: ["ceiling", "height", "grand room", "architecture", "vault", "window", "fireplace"],
