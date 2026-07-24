@@ -100,7 +100,7 @@ const conciergeTopics = [
   },
   {
     keywords: ["ceiling", "height", "grand room", "architecture", "vault", "window", "fireplace"],
-    answer: "The home is designed around exceptional scale: 12-foot main-level walls, approximately 14-foot-6-inch Grand Room walls and a vaulted peak of roughly 26 feet. Tall windows, transoms, wood ceilings, tailored millwork and a full-height masonry hearth complete the composition."
+    answer: "The home is designed around exceptional scale: 12-foot main-level walls, approximately 14-foot-6-inch Grand Room walls and a vaulted peak of roughly 26 feet. Tall windows, transoms, a paneled vaulted ceiling, tailored millwork and a full-height masonry hearth complete the composition."
   },
   {
     keywords: ["bull point", "community", "amenity", "amenities", "boat", "clubhouse", "pool", "tennis", "pickleball", "river"],
@@ -108,15 +108,15 @@ const conciergeTopics = [
   },
   {
     keywords: ["selection", "finish", "floor", "cabinet", "counter", "appliance", "kitchen", "bath", "tile", "lighting"],
-    answer: "The preliminary collection pairs wide-plank white oak, soft-white perimeter cabinetry, a natural-oak island, brushed-gold hardware, ZLINE Autograph appliances, Calacatta quartz, touchless bath fixtures, natural-stone mosaics, statement lighting and copper gas lanterns. Availability and approved project documents control final selections."
+    answer: "The current preliminary collection pairs wide-plank white oak, Champagne perimeter cabinetry, a natural-oak island, brushed-gold hardware, ZLINE Autograph appliances, Calacatta quartz, touchless vanity faucets, Delta brushed-gold primary-bath systems, ZLINE matte-black guest-bath systems, coastal-blue tile accents, statement lighting and copper gas lanterns. Availability and approved project documents control final selections."
   },
   {
     keywords: ["price", "cost", "available", "availability", "listing", "zillow", "offer"],
     answer: "The current public offering is presented from $1,350,000+. Use the Zillow link on this page for the current listing, or text Stacey or Billy for availability, purchase terms and a private presentation."
   },
   {
-    keywords: ["construction", "completion", "complete", "finish", "timeline", "when", "rough", "change", "personalize"],
-    answer: "The current estimated completion period is approximately six to seven months from the present construction stage, subject to weather, inspections, utilities, materials and approved changes. Select rough-in and finish decisions may remain available when coordinated before the applicable work is completed."
+    keywords: ["construction", "completion", "complete", "finish", "timeline", "when", "rough", "change", "personalize", "instagram", "facebook", "progress", "update"],
+    answer: "Construction is active: framing is complete and has passed. MEP rough-ins begin Monday, July 27, 2026 and are scheduled for approximately three weeks, followed by required inspections, insulation and drywall. The overall estimate remains approximately six to seven months from the July 2026 framing and rough-in stage, subject to weather, inspections, utilities, materials and approved changes. Follow @bullpointsc on Instagram or Facebook for current jobsite photos and videos."
   },
   {
     keywords: ["hg group", "old south", "osp", "builder", "broker", "other", "team", "company"],

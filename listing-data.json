@@ -18,7 +18,23 @@
     "mainLevelWallHeightFeet": 12,
     "grandRoomWallHeight": "14 feet 6 inches",
     "vaultedPeakHeightApprox": "26 feet",
-    "completionEstimate": "Approximately six to seven months from the current construction stage, subject to construction conditions and approved changes."
+    "completionEstimate": "Approximately six to seven months from the July 2026 framing and rough-in stage, subject to construction conditions and approved changes."
+  },
+  "construction": {
+    "statusUpdated": "2026-07-24",
+    "currentPhase": "MEP rough-in",
+    "currentPhaseStarts": "2026-07-27",
+    "currentPhaseDurationEstimate": "Approximately three weeks",
+    "completedMilestones": [
+      "Site and foundation",
+      "Framing passed"
+    ],
+    "nextMilestones": [
+      "Rough-in inspections",
+      "Insulation",
+      "Drywall",
+      "Interior finishes and final delivery"
+    ]
   },
   "contacts": [
     {
@@ -38,7 +54,9 @@
     "community": "https://bullpoint.com/",
     "brokerage": "https://osprealestate.com/",
     "legalNotices": "https://osprealestate.com/legal-notices-disclosures",
-    "brochure": "downloads/2-blake-lane-luxury-buyer-brochure.pdf"
+    "brochure": "downloads/2-blake-lane-luxury-buyer-brochure.pdf",
+    "instagram": "https://www.instagram.com/bullpointsc/",
+    "facebook": "https://www.facebook.com/bullpointsc/"
   },
   "approvedAssets": {
     "heroExterior": "assets/front-rendering.jpeg",
@@ -49,7 +67,8 @@
     "primaryBath": "assets/primary-bath.jpeg",
     "mainLevelPlan": "assets/main-level-plan.jpeg",
     "upperLevelPlan": "assets/upper-level-plan.jpeg",
-    "designCollection": "assets/design-collection.jpeg"
+    "designCollection": "assets/design-vision-board-2026-07-24.jpeg",
+    "appliancePlumbingCollection": "assets/appliance-plumbing-collection.jpeg"
   },
   "buyerInquiryMessage": "Hello, I am interested in 2 Blake Lane at Bull Point and would like more information or a private presentation.",
   "controllingDocumentsNotice": "The executed purchase agreement, approved plans, final specifications and signed change orders control.",
