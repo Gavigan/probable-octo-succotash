@@ -1,0 +1,54 @@
+{
+  "collection": "OSP Signature Property Collection",
+  "status": "active-new-construction",
+  "property": {
+    "address": "2 Blake Lane",
+    "planName": "The Hancock",
+    "community": "Bull Point Plantation",
+    "city": "Seabrook",
+    "state": "SC",
+    "postalCode": "29940",
+    "offeringPriceFrom": 1350000,
+    "bedrooms": 4,
+    "bathrooms": 4.5,
+    "heatedSquareFeetApprox": 3414,
+    "underRoofSquareFeetApprox": 4995,
+    "mainLevelWallHeightFeet": 12,
+    "grandRoomWallHeight": "14 feet 6 inches",
+    "vaultedPeakHeightApprox": "26 feet",
+    "completionEstimate": "Approximately six to seven months from the current construction stage, subject to construction conditions and approved changes."
+  },
+  "contacts": [
+    {
+      "name": "Stacey",
+      "phoneDisplay": "843-252-4383",
+      "phoneE164": "+18432524383"
+    },
+    {
+      "name": "Billy",
+      "phoneDisplay": "843-252-3559",
+      "phoneE164": "+18432523559"
+    }
+  ],
+  "links": {
+    "canonical": "https://2blakelane.osprealestate.com/",
+    "zillow": "https://www.zillow.com/homedetails/The-Hancock-Plan,-Bull-Point-Seabrook-SC-29940/461608305_zpid/",
+    "community": "https://bullpoint.com/",
+    "brokerage": "https://osprealestate.com/",
+    "legalNotices": "https://osprealestate.com/legal-notices-disclosures",
+    "brochure": "downloads/2-blake-lane-luxury-buyer-brochure.pdf"
+  },
+  "approvedAssets": {
+    "heroExterior": "assets/front-rendering.jpeg",
+    "secondaryExterior": "assets/side-rendering.jpeg",
+    "grandRoom": "assets/grand-room-kitchen.jpeg",
+    "familySittingRoom": "assets/family-sitting-room.jpeg",
+    "primaryBedroom": "assets/primary-bedroom.jpeg",
+    "primaryBath": "assets/primary-bath.jpeg",
+    "mainLevelPlan": "assets/main-level-plan.jpeg",
+    "upperLevelPlan": "assets/upper-level-plan.jpeg",
+    "designCollection": "assets/design-collection.jpeg"
+  },
+  "buyerInquiryMessage": "Hello, I am interested in 2 Blake Lane at Bull Point and would like more information or a private presentation.",
+  "controllingDocumentsNotice": "The executed purchase agreement, approved plans, final specifications and signed change orders control."
+}

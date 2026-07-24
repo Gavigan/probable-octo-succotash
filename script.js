@@ -58,3 +58,121 @@ if ("IntersectionObserver" in window && !reduceMotion) {
 } else {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
 }
+
+const planModal = document.querySelector("#plan-modal");
+const planModalImage = planModal.querySelector("[data-plan-modal-image]");
+const planModalLabel = planModal.querySelector("[data-plan-modal-label]");
+const planModalTitle = planModal.querySelector("[data-plan-modal-title]");
+const planClose = planModal.querySelector("[data-plan-close]");
+
+function closePlan() {
+  if (typeof planModal.close === "function" && planModal.open) {
+    planModal.close();
+  } else {
+    planModal.removeAttribute("open");
+  }
+}
+
+document.querySelectorAll("[data-plan-src]").forEach((button) => {
+  button.addEventListener("click", () => {
+    planModalImage.src = button.dataset.planSrc;
+    planModalImage.alt = button.dataset.planAlt;
+    planModalLabel.textContent = button.dataset.planLabel;
+    planModalTitle.textContent = button.dataset.planTitle;
+
+    if (typeof planModal.showModal === "function") {
+      planModal.showModal();
+    } else {
+      planModal.setAttribute("open", "");
+    }
+  });
+});
+
+planClose.addEventListener("click", closePlan);
+planModal.addEventListener("click", (event) => {
+  if (event.target === planModal) closePlan();
+});
+
+const conciergeTopics = [
+  {
+    keywords: ["overview", "home", "house", "bedroom", "bath", "square", "size", "layout", "plan"],
+    answer: "The Hancock is currently presented with four bedrooms, 4.5 baths, approximately 3,414 heated square feet and approximately 4,995 square feet under roof. The primarily one-level layout includes a private primary wing, generous guest rooms and a conditioned upper suite with a full bath. Current plans and purchase documents control final dimensions."
+  },
+  {
+    keywords: ["ceiling", "height", "grand room", "architecture", "vault", "window", "fireplace"],
+    answer: "The home is designed around exceptional scale: 12-foot main-level walls, approximately 14-foot-6-inch Grand Room walls and a vaulted peak of roughly 26 feet. Tall windows, transoms, wood ceilings, tailored millwork and a full-height masonry hearth complete the composition."
+  },
+  {
+    keywords: ["bull point", "community", "amenity", "amenities", "boat", "clubhouse", "pool", "tennis", "pickleball", "river"],
+    answer: "Bull Point is an approximately 700-acre gated waterfront community with six miles of tidal river frontage, a private boat landing and docks, a 6,500-square-foot clubhouse and fitness center, Junior Olympic pool, hot tub, tennis and pickleball courts, Magnolia Island pavilion, trails and a 20-acre bird sanctuary."
+  },
+  {
+    keywords: ["selection", "finish", "floor", "cabinet", "counter", "appliance", "kitchen", "bath", "tile", "lighting"],
+    answer: "The preliminary collection pairs wide-plank white oak, soft-white perimeter cabinetry, a natural-oak island, brushed-gold hardware, ZLINE Autograph appliances, Calacatta quartz, touchless bath fixtures, natural-stone mosaics, statement lighting and copper gas lanterns. Availability and approved project documents control final selections."
+  },
+  {
+    keywords: ["price", "cost", "available", "availability", "listing", "zillow", "offer"],
+    answer: "The current public offering is presented from $1,350,000+. Use the Zillow link on this page for the current listing, or text Stacey or Billy for availability, purchase terms and a private presentation."
+  },
+  {
+    keywords: ["construction", "completion", "complete", "finish", "timeline", "when", "rough", "change", "personalize"],
+    answer: "The current estimated completion period is approximately six to seven months from the present construction stage, subject to weather, inspections, utilities, materials and approved changes. Select rough-in and finish decisions may remain available when coordinated before the applicable work is completed."
+  },
+  {
+    keywords: ["hg group", "old south", "osp", "builder", "broker", "other", "team", "company"],
+    answer: "HG Group Signature Homes brings together development, construction and project leadership, while Old South Properties guides the real-estate presentation and buyer experience. Use the Old South Properties link below to explore the broader team and other opportunities."
+  }
+];
+
+const conciergeLauncher = document.querySelector(".concierge-launcher");
+const conciergePanel = document.querySelector("#property-concierge");
+const conciergeClose = conciergePanel.querySelector("[data-concierge-close]");
+const conciergeBody = conciergePanel.querySelector(".concierge-body");
+const conciergeForm = conciergePanel.querySelector(".concierge-form");
+const conciergeInput = conciergePanel.querySelector("#concierge-question");
+
+function setConcierge(open) {
+  conciergeLauncher.classList.toggle("open", open);
+  conciergePanel.classList.toggle("open", open);
+  conciergeLauncher.setAttribute("aria-expanded", String(open));
+  conciergePanel.setAttribute("aria-hidden", String(!open));
+  if (open) window.setTimeout(() => conciergeInput.focus(), 220);
+}
+
+function appendConciergeMessage(role, text) {
+  const message = document.createElement("p");
+  message.className = `concierge-message ${role}`;
+  message.textContent = text;
+  conciergeBody.appendChild(message);
+  conciergeBody.scrollTop = conciergeBody.scrollHeight;
+}
+
+function answerConcierge(question) {
+  const normalized = question.toLowerCase();
+  const topic = conciergeTopics.find((item) =>
+    item.keywords.some((keyword) => normalized.includes(keyword))
+  );
+  return topic?.answer || "I can help with the home, floor plan, architecture, selections, Bull Point amenities, pricing, construction timing and the HG Group or Old South Properties team. For a contract, availability or project-specific decision, please text Stacey or Billy directly.";
+}
+
+function askConcierge(question) {
+  const cleanQuestion = question.trim();
+  if (!cleanQuestion) return;
+  appendConciergeMessage("user", cleanQuestion);
+  appendConciergeMessage("assistant", answerConcierge(cleanQuestion));
+  conciergeInput.value = "";
+}
+
+conciergeLauncher.addEventListener("click", () => setConcierge(true));
+conciergeClose.addEventListener("click", () => setConcierge(false));
+conciergePanel.querySelectorAll(".concierge-topics button").forEach((button) => {
+  button.addEventListener("click", () => askConcierge(button.textContent));
+});
+conciergeForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  askConcierge(conciergeInput.value);
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setConcierge(false);
+});
