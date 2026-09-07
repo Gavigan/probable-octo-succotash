@@ -62,7 +62,9 @@
     }
   }
   </script>
-</head>
+<style>
+ .inquiry-form{display:grid;gap:12px;margin:22px 0;padding:18px;background:#fff;color:#0b1f46;border:1px solid #b89a5b}.inquiry-form label{display:grid;gap:5px;font:500 14px/1.5 Arial,sans-serif}.inquiry-form input,.inquiry-form textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #667085;border-radius:0;font:16px Arial,sans-serif;background:white;color:#111}.inquiry-form button{padding:14px;background:#0b1f46;color:white;border:1px solid #b89a5b;font-weight:bold;cursor:pointer}.inquiry-form p{font:14px/1.5 Arial,sans-serif;margin:0}.inquiry-form textarea{min-height:90px}.inquiry-form a{text-decoration:underline}.concierge-panel{overflow-y:auto;max-height:80svh}.concierge-launch,.concierge-launcher{box-shadow:0 8px 32px #0006;border:2px solid #b89a5b;padding:18px 24px;background:#0b1f46;color:#fff}.concierge-launch strong,.concierge-launch small{display:block}.concierge-launch strong{font:600 18px Georgia,serif}.concierge-launch small{font:12px Arial,sans-serif;margin-top:5px;color:#e8d5ad}
+ </style></head>
 <body>
   <div class="progress" aria-hidden="true"><span></span></div>
 
@@ -511,7 +513,7 @@
       <input id="concierge-question" name="question" placeholder="Ask a question…" autocomplete="off">
       <button type="submit" aria-label="Send question">→</button>
     </form>
-    <div class="concierge-footer">
+    <form class="inquiry-form" id="team-inquiry"><strong>Ask Stacey &amp; Billy</strong><label>Your name<input name="name" autocomplete="name" maxlength="100" required></label><label>Mobile number<input name="phone" type="tel" autocomplete="tel" maxlength="35" required></label><label>Email (optional)<input name="email" type="email" autocomplete="email" maxlength="160"></label><label>Your question<textarea name="question" maxlength="2000" required></textarea></label><p>We’ll use your details to respond to this property inquiry. This opens your email app with both team members addressed; please send the message there. Nothing is submitted or stored by this page.</p><button type="submit">Continue in email to Stacey &amp; Billy →</button><p id="inquiry-status" role="status"></p><p>Email unavailable? Call <a href="tel:+18432524383">Stacey</a> or <a href="tel:+18432523559">Billy</a>.</p></form><div class="concierge-footer">
       <span>Answers use approved property information.</span>
       <div>
         <a href="sms:+18432524383?&amp;body=Hello%2C%20I%20am%20interested%20in%202%20Blake%20Lane%20at%20Bull%20Point%20and%20would%20like%20more%20information%20or%20a%20private%20presentation.">Text Stacey</a>
@@ -534,5 +536,5 @@
   </dialog>
 
   <script src="script.js?v=20260907-1"></script>
-</body>
+<script>(()=>{const f=document.getElementById('team-inquiry');f.addEventListener('submit',e=>{e.preventDefault();if(!f.reportValidity())return;const d=new FormData(f);const body=['Property: 2 Blake Lane','Name: '+d.get('name'),'Mobile: '+d.get('phone'),'Email: '+d.get('email'),'','Question: '+d.get('question'),'','Property page: '+location.origin+location.pathname].join('\n');location.href='mailto:stacey@gavigangroup.com,billy@gavigangroup.com?subject='+encodeURIComponent('2 Blake Lane property inquiry')+'&body='+encodeURIComponent(body);document.getElementById('inquiry-status').textContent='Email draft requested. Please press Send in your email app. This page cannot confirm delivery.'});})();</script></body>
 </html>
