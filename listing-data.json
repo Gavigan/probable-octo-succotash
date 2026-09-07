@@ -17,21 +17,19 @@
     "underRoofSquareFeetApprox": 4650,
     "mainLevelWallHeightFeet": 12,
     "grandRoomWallHeight": "14 feet 6 inches",
-    "vaultedPeakHeightApprox": "26 feet",
-    "completionEstimate": "Approximately six to seven months from the July 2026 framing and rough-in stage, subject to construction conditions and approved changes."
+    "vaultedPeakHeightApprox": "Roughly 22 feet per current listing; approved plans control",
+    "completionEstimate": "Contact the project team for the current completion schedule."
   },
   "construction": {
-    "statusUpdated": "2026-07-24",
-    "currentPhase": "MEP rough-in",
-    "currentPhaseStarts": "2026-07-27",
-    "currentPhaseDurationEstimate": "Approximately three weeks",
+    "statusUpdated": "2026-09-07",
+    "currentPhase": "Insulation",
     "completedMilestones": [
       "Site and foundation",
-      "Framing passed"
+      "Framing passed",
+      "MPE rough-in passed"
     ],
     "nextMilestones": [
-      "Rough-in inspections",
-      "Insulation",
+      "Insulation approvals",
       "Drywall",
       "Interior finishes and final delivery"
     ]
@@ -50,7 +48,7 @@
   ],
   "links": {
     "canonical": "https://2blakelane.osprealestate.com/",
-    "zillow": "https://www.zillow.com/homedetails/The-Hancock-Plan,-Bull-Point-Seabrook-SC-29940/461608305_zpid/",
+    "zillow": "https://www.zillow.com/homedetails/2-Blake-Ln-Seabrook-SC-29940/464745710_zpid/",
     "community": "https://bullpoint.com/",
     "brokerage": "https://osprealestate.com/",
     "legalNotices": "https://osprealestate.com/legal-notices-disclosures",
