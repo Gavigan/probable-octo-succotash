@@ -100,7 +100,7 @@ const conciergeTopics = [
   },
   {
     keywords: ["ceiling", "height", "grand room", "architecture", "vault", "window", "fireplace"],
-    answer: "The home is designed around exceptional scale: 12-foot main-level walls, approximately 14-foot-6-inch Grand Room walls and a vaulted peak of roughly 26 feet. Tall windows, transoms, a paneled vaulted ceiling, tailored millwork and a full-height masonry hearth complete the composition."
+    answer: "The home is designed around exceptional scale: 12-foot main-level walls, approximately 14-foot-6-inch Grand Room walls and a vaulted peak of roughly 22 feet per the current listing; approved plans control final dimensions. Tall windows, transoms, a paneled vaulted ceiling, tailored millwork and a full-height masonry hearth complete the composition."
   },
   {
     keywords: ["bull point", "community", "amenity", "amenities", "boat", "clubhouse", "pool", "tennis", "pickleball", "river"],
@@ -112,11 +112,11 @@ const conciergeTopics = [
   },
   {
     keywords: ["price", "cost", "available", "availability", "listing", "zillow", "offer"],
-    answer: "The current public offering is presented from $1,350,000+. Use the Zillow link on this page for the current listing, or text Stacey or Billy for availability, purchase terms and a private presentation."
+    answer: "The current listing price is $1,350,000; confirm current price and availability with the agents. Use the Zillow link on this page for the current listing, or text Stacey or Billy for availability, purchase terms and a private presentation."
   },
   {
     keywords: ["construction", "completion", "complete", "finish", "timeline", "when", "rough", "change", "personalize", "instagram", "facebook", "progress", "update"],
-    answer: "Construction is active: framing is complete and has passed. MEP rough-ins begin Monday, July 27, 2026 and are scheduled for approximately three weeks, followed by required inspections, insulation and drywall. The overall estimate remains approximately six to seven months from the July 2026 framing and rough-in stage, subject to weather, inspections, utilities, materials and approved changes. Follow @bullpointsc on Instagram or Facebook for current jobsite photos and videos."
+    answer: "Construction update, September 7, 2026: framing and MPE rough-in inspections have passed. The home is in the insulation phase; drywall follows required approvals. Contact the project team for the current completion schedule and any proposed changes. Follow @bullpointsc on Instagram or Facebook for current jobsite photos and videos."
   },
   {
     keywords: ["hg group", "old south", "osp", "builder", "broker", "other", "team", "company"],
